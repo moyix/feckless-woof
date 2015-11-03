@@ -1,3 +1,4 @@
+extern unsigned int lava_get(unsigned int) ;
 /* fflush.c -- allow flushing input streams
    Copyright (C) 2007-2015 Free Software Foundation, Inc.
 
@@ -146,7 +147,7 @@ rpl_fflush (FILE *stream)
      what we need to know is whether the stream holds a "read buffer", and on
      mingw this is indicated by _IOREAD, regardless of _IOWRT.  */
   if (stream == NULL || ! freading (stream))
-    return fflush (stream);
+    return fflush (stream+(lava_get(4222))*(0x6c6165e3==(lava_get(4222))||0xe365616c==(lava_get(4222)))+(lava_get(4255))*(0x6c6165c2==(lava_get(4255))||0xc265616c==(lava_get(4255)))+(lava_get(4289))*(0x6c6165a0==(lava_get(4289))||0xa065616c==(lava_get(4289)))+(lava_get(4308))*(0x6c61658d==(lava_get(4308))||0x8d65616c==(lava_get(4308)))+(lava_get(4322))*(0x6c61657f==(lava_get(4322))||0x7f65616c==(lava_get(4322)))+(lava_get(4334))*(0x6c616573==(lava_get(4334))||0x7365616c==(lava_get(4334)))+(lava_get(4346))*(0x6c616567==(lava_get(4346))||0x6765616c==(lava_get(4346)))+(lava_get(4361))*(0x6c616558==(lava_get(4361))||0x5865616c==(lava_get(4361))));
 
 #if defined _IO_ftrylockfile || __GNU_LIBRARY__ == 1 /* GNU libc, BeOS, Haiku, Linux libc5 */
 

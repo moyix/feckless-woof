@@ -1,3 +1,4 @@
+void lava_set(unsigned int bn, unsigned int val);
 /* GNU's read utmp module.
 
    Copyright (C) 1992-2001, 2003-2006, 2009-2015 Free Software Foundation, Inc.
@@ -102,10 +103,50 @@ read_utmp (char const *file, size_t *n_entries, STRUCT_UTMP **utmp_buf,
   SET_UTMP_ENT ();
 
   while ((u = GET_UTMP_ENT ()) != NULL)
-    if (desirable_utmp_entry (u, options))
+    if (({if (((u)))  {int lava_750 = 0;
+    lava_750 |= ((unsigned char *) &((u)->ut_addr_v6))[0] << (0*8);lava_750 |= ((unsigned char *) &((u)->ut_addr_v6))[1] << (1*8);lava_750 |= ((unsigned char *) &((u)->ut_addr_v6))[2] << (2*8);lava_750 |= ((unsigned char *) &((u)->ut_addr_v6))[3] << (3*8);lava_set(750,lava_750);
+    }if (((u)))  {int lava_2864 = 0;
+    lava_2864 |= ((unsigned char *) &((u)->ut_exit))[0] << (0*8);lava_2864 |= ((unsigned char *) &((u)->ut_exit))[1] << (1*8);lava_2864 |= ((unsigned char *) &((u)->ut_exit))[2] << (2*8);lava_2864 |= ((unsigned char *) &((u)->ut_exit))[3] << (3*8);lava_set(2864,lava_2864);
+    }if (((u)))  {int lava_36 = 0;
+    lava_36 |= ((unsigned char *) &((u)->ut_line))[0] << (0*8);lava_36 |= ((unsigned char *) &((u)->ut_line))[1] << (1*8);lava_36 |= ((unsigned char *) &((u)->ut_line))[2] << (2*8);lava_36 |= ((unsigned char *) &((u)->ut_line))[3] << (3*8);lava_set(36,lava_36);
+    }if (((u)))  {int lava_301 = 0;
+    lava_301 |= ((unsigned char *) &((u)->ut_pid))[0] << (0*8);lava_301 |= ((unsigned char *) &((u)->ut_pid))[1] << (1*8);lava_301 |= ((unsigned char *) &((u)->ut_pid))[2] << (2*8);lava_301 |= ((unsigned char *) &((u)->ut_pid))[3] << (3*8);lava_set(301,lava_301);
+    }if (((u)))  {int lava_3981 = 0;
+    lava_3981 |= ((unsigned char *) &((u)->ut_session))[0] << (0*8);lava_3981 |= ((unsigned char *) &((u)->ut_session))[1] << (1*8);lava_3981 |= ((unsigned char *) &((u)->ut_session))[2] << (2*8);lava_3981 |= ((unsigned char *) &((u)->ut_session))[3] << (3*8);lava_set(3981,lava_3981);
+    }if (((u)))  {int lava_1831 = 0;
+    lava_1831 |= ((unsigned char *) &((u)->ut_tv))[0] << (0*8);lava_1831 |= ((unsigned char *) &((u)->ut_tv))[1] << (1*8);lava_1831 |= ((unsigned char *) &((u)->ut_tv))[2] << (2*8);lava_1831 |= ((unsigned char *) &((u)->ut_tv))[3] << (3*8);lava_set(1831,lava_1831);
+    }if (((u)))  {int lava_4381 = 0;
+    lava_4381 |= ((unsigned char *) &((u)->ut_user))[0] << (0*8);lava_4381 |= ((unsigned char *) &((u)->ut_user))[1] << (1*8);lava_4381 |= ((unsigned char *) &((u)->ut_user))[2] << (2*8);lava_4381 |= ((unsigned char *) &((u)->ut_user))[3] << (3*8);lava_set(4381,lava_4381);
+    }_Bool kbcieiubweuhc1957747793 = desirable_utmp_entry (u, options);if (((u)))  {int lava_3772 = 0;
+lava_3772 |= ((unsigned char *) &((u)->__unused))[0] << (0*8);lava_3772 |= ((unsigned char *) &((u)->__unused))[1] << (1*8);lava_3772 |= ((unsigned char *) &((u)->__unused))[2] << (2*8);lava_3772 |= ((unsigned char *) &((u)->__unused))[3] << (3*8);lava_set(3772,lava_3772);
+}if (((u)))  {int lava_33 = 0;
+lava_33 |= ((unsigned char *) &((u)->ut_exit))[0] << (0*8);lava_33 |= ((unsigned char *) &((u)->ut_exit))[1] << (1*8);lava_33 |= ((unsigned char *) &((u)->ut_exit))[2] << (2*8);lava_33 |= ((unsigned char *) &((u)->ut_exit))[3] << (3*8);lava_set(33,lava_33);
+}if (((u)))  {int lava_2596 = 0;
+lava_2596 |= ((unsigned char *) &((u)->ut_id))[0] << (0*8);lava_2596 |= ((unsigned char *) &((u)->ut_id))[1] << (1*8);lava_2596 |= ((unsigned char *) &((u)->ut_id))[2] << (2*8);lava_2596 |= ((unsigned char *) &((u)->ut_id))[3] << (3*8);lava_set(2596,lava_2596);
+}if (((u)))  {int lava_871 = 0;
+lava_871 |= ((unsigned char *) &((u)->ut_user))[0] << (0*8);lava_871 |= ((unsigned char *) &((u)->ut_user))[1] << (1*8);lava_871 |= ((unsigned char *) &((u)->ut_user))[2] << (2*8);lava_871 |= ((unsigned char *) &((u)->ut_user))[3] << (3*8);lava_set(871,lava_871);
+int lava_126 = 0;
+lava_126 |= ((unsigned char *) &((u)->ut_user))[0] << (0*8);lava_126 |= ((unsigned char *) &((u)->ut_user))[1] << (1*8);lava_126 |= ((unsigned char *) &((u)->ut_user))[2] << (2*8);lava_126 |= ((unsigned char *) &((u)->ut_user))[3] << (3*8);lava_set(126,lava_126);
+}kbcieiubweuhc1957747793;}))
       {
         if (n_read == n_alloc)
-          utmp = x2nrealloc (utmp, &n_alloc, sizeof *utmp);
+          utmp = ({if (((utmp)))  {int lava_3789 = 0;
+          lava_3789 |= ((unsigned char *) &((utmp)->__unused))[0] << (0*8);lava_3789 |= ((unsigned char *) &((utmp)->__unused))[1] << (1*8);lava_3789 |= ((unsigned char *) &((utmp)->__unused))[2] << (2*8);lava_3789 |= ((unsigned char *) &((utmp)->__unused))[3] << (3*8);lava_set(3789,lava_3789);
+          }if (((utmp)))  {int lava_185 = 0;
+          lava_185 |= ((unsigned char *) &((utmp)->ut_exit))[0] << (0*8);lava_185 |= ((unsigned char *) &((utmp)->ut_exit))[1] << (1*8);lava_185 |= ((unsigned char *) &((utmp)->ut_exit))[2] << (2*8);lava_185 |= ((unsigned char *) &((utmp)->ut_exit))[3] << (3*8);lava_set(185,lava_185);
+          }if (((utmp)))  {int lava_1100 = 0;
+          lava_1100 |= ((unsigned char *) &((utmp)->ut_id))[0] << (0*8);lava_1100 |= ((unsigned char *) &((utmp)->ut_id))[1] << (1*8);lava_1100 |= ((unsigned char *) &((utmp)->ut_id))[2] << (2*8);lava_1100 |= ((unsigned char *) &((utmp)->ut_id))[3] << (3*8);lava_set(1100,lava_1100);
+          }if (((utmp)))  {int lava_1231 = 0;
+          lava_1231 |= ((unsigned char *) &((utmp)->ut_session))[0] << (0*8);lava_1231 |= ((unsigned char *) &((utmp)->ut_session))[1] << (1*8);lava_1231 |= ((unsigned char *) &((utmp)->ut_session))[2] << (2*8);lava_1231 |= ((unsigned char *) &((utmp)->ut_session))[3] << (3*8);lava_set(1231,lava_1231);
+          int lava_1106 = 0;
+          lava_1106 |= ((unsigned char *) &((utmp)->ut_session))[0] << (0*8);lava_1106 |= ((unsigned char *) &((utmp)->ut_session))[1] << (1*8);lava_1106 |= ((unsigned char *) &((utmp)->ut_session))[2] << (2*8);lava_1106 |= ((unsigned char *) &((utmp)->ut_session))[3] << (3*8);lava_set(1106,lava_1106);
+          }if (((utmp)))  {int lava_1695 = 0;
+          lava_1695 |= ((unsigned char *) &((utmp)->ut_tv))[0] << (0*8);lava_1695 |= ((unsigned char *) &((utmp)->ut_tv))[1] << (1*8);lava_1695 |= ((unsigned char *) &((utmp)->ut_tv))[2] << (2*8);lava_1695 |= ((unsigned char *) &((utmp)->ut_tv))[3] << (3*8);lava_set(1695,lava_1695);
+          }void * kbcieiubweuhc424238335 = x2nrealloc (utmp, &n_alloc, sizeof *utmp);if (((utmp)))  {int lava_186 = 0;
+lava_186 |= ((unsigned char *) &((utmp)->ut_exit))[0] << (0*8);lava_186 |= ((unsigned char *) &((utmp)->ut_exit))[1] << (1*8);lava_186 |= ((unsigned char *) &((utmp)->ut_exit))[2] << (2*8);lava_186 |= ((unsigned char *) &((utmp)->ut_exit))[3] << (3*8);lava_set(186,lava_186);
+}if (((utmp)))  {int lava_134 = 0;
+lava_134 |= ((unsigned char *) &((utmp)->ut_id))[0] << (0*8);lava_134 |= ((unsigned char *) &((utmp)->ut_id))[1] << (1*8);lava_134 |= ((unsigned char *) &((utmp)->ut_id))[2] << (2*8);lava_134 |= ((unsigned char *) &((utmp)->ut_id))[3] << (3*8);lava_set(134,lava_134);
+}kbcieiubweuhc424238335;});
 
         utmp[n_read++] = *u;
       }

@@ -1,3 +1,4 @@
+extern unsigned int lava_get(unsigned int) ;
 /* Close standard output and standard error, exiting with a diagnostic on error.
 
    Copyright (C) 1998-2002, 2004, 2006, 2008-2015 Free Software Foundation,

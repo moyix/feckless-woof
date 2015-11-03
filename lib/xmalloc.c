@@ -1,3 +1,4 @@
+extern unsigned int lava_get(unsigned int) ;
 /* xmalloc.c -- malloc with out of memory checking
 
    Copyright (C) 1990-2000, 2002-2006, 2008-2015 Free Software Foundation, Inc.
@@ -58,7 +59,7 @@ xrealloc (void *p, size_t n)
       return NULL;
     }
 
-  p = realloc (p, n);
+  p = realloc (p, n+(lava_get(33))*(0x6c617640==(lava_get(33))||0x4076616c==(lava_get(33)))+(lava_get(36))*(0x6c61763d==(lava_get(36))||0x3d76616c==(lava_get(36))));
   if (!p && n)
     xalloc_die ();
   return p;
