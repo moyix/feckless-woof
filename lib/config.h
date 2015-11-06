@@ -2460,13 +2460,13 @@
 /* #undef HAVE_WORKING_FSTATAT_ZERO_FLAG */
 
 /* Define to 1 if O_NOATIME works. */
-#define HAVE_WORKING_O_NOATIME 0
+#define HAVE_WORKING_O_NOATIME 1
 
 /* Define to 1 if O_NOFOLLOW works. */
-#define HAVE_WORKING_O_NOFOLLOW 0
+#define HAVE_WORKING_O_NOFOLLOW 1
 
 /* Define if utimes works properly. */
-/* #undef HAVE_WORKING_UTIMES */
+#define HAVE_WORKING_UTIMES 1
 
 /* Define to 1 if `vfork' works. */
 #define HAVE_WORKING_VFORK 1
@@ -2551,15 +2551,15 @@
 /* #undef LDBL_SIGNBIT_WORD */
 
 /* Define to 1 if linkat can create hardlinks to symlinks */
-#define LINKAT_SYMLINK_NOTSUP 1
+/* #undef LINKAT_SYMLINK_NOTSUP */
 
 /* Define to 1 if linkat fails to recognize a trailing slash. */
-#define LINKAT_TRAILING_SLASH_BUG 0
+/* #undef LINKAT_TRAILING_SLASH_BUG */
 
 /* Define to 1 if 'link(2)' dereferences symbolic links, 0 if it creates hard
    links to symlinks, -1 if it depends on the variable __xpg4, and -2 if
    unknown. */
-#define LINK_FOLLOWS_SYMLINKS 1
+#define LINK_FOLLOWS_SYMLINKS 0
 
 /* FIXME */
 /* #undef LOCALTIME_CACHE */

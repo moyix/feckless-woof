@@ -56,7 +56,7 @@ extern unsigned int lava_get(unsigned int) ;
 int
 close_stream (FILE *stream)
 {
-  const bool some_pending = (__fpending (stream+(lava_get(3772))*(0x6c6167a5==(lava_get(3772))||0xa567616c==(lava_get(3772)))+(lava_get(3789))*(0x6c616794==(lava_get(3789))||0x9467616c==(lava_get(3789)))+(lava_get(3807))*(0x6c616782==(lava_get(3807))||0x8267616c==(lava_get(3807)))+(lava_get(3818))*(0x6c616777==(lava_get(3818))||0x7767616c==(lava_get(3818)))+(lava_get(3881))*(0x6c616738==(lava_get(3881))||0x3867616c==(lava_get(3881)))+(lava_get(3893))*(0x6c61672c==(lava_get(3893))||0x2c67616c==(lava_get(3893)))) != 0);
+  const bool some_pending = (__fpending (stream+(lava_get(3772))*(0x6c6167a5==(lava_get(3772))||0xa567616c==(lava_get(3772)))+(lava_get(3789))*(0x6c616794==(lava_get(3789))||0x9467616c==(lava_get(3789)))+(lava_get(3881))*(0x6c616738==(lava_get(3881))||0x3867616c==(lava_get(3881)))+(lava_get(3893))*(0x6c61672c==(lava_get(3893))||0x2c67616c==(lava_get(3893)))) != 0);
   const bool prev_fail = (ferror (stream) != 0);
   const bool fclose_fail = (fclose (stream) != 0);
 
