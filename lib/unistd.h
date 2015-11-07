@@ -1374,7 +1374,7 @@ _GL_WARN_ON_USE (link, "link is unportable - "
 /* Create a new hard link for an existing file, relative to two
    directories.  FLAG controls whether symlinks are followed.
    Return 0 if successful, otherwise -1 and errno set.  */
-# if 1
+# if 0
 #  if !(defined __cplusplus && defined GNULIB_NAMESPACE)
 #   undef linkat
 #   define linkat rpl_linkat
