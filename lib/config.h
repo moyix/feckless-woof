@@ -96,7 +96,7 @@
 
 /* Define to 1 if translation of program messages to the user's native
    language is requested. */
-#define ENABLE_NLS 1
+/* #undef ENABLE_NLS */
 
 /* Define to 1 if your platform has fchownat, but it does not reject an empty
    file name. */
@@ -774,7 +774,7 @@
 /* #undef HAVE_ACL_CREATE_ENTRY_NP */
 
 /* Define to 1 if you have the `acl_delete_def_file' function. */
-#define HAVE_ACL_DELETE_DEF_FILE 1
+/* #undef HAVE_ACL_DELETE_DEF_FILE */
 
 /* Define to 1 if you have the `acl_delete_fd_np' function. */
 /* #undef HAVE_ACL_DELETE_FD_NP */
@@ -783,40 +783,40 @@
 /* #undef HAVE_ACL_DELETE_FILE_NP */
 
 /* Define to 1 if you have the `acl_entries' function. */
-#define HAVE_ACL_ENTRIES 1
+/* #undef HAVE_ACL_ENTRIES */
 
 /* Define to 1 if you have the `acl_extended_file' function. */
-#define HAVE_ACL_EXTENDED_FILE 1
+/* #undef HAVE_ACL_EXTENDED_FILE */
 
 /* Define to 1 if the constant ACL_FIRST_ENTRY exists. */
-#define HAVE_ACL_FIRST_ENTRY 1
+/* #undef HAVE_ACL_FIRST_ENTRY */
 
 /* Define to 1 if you have the `acl_free' function. */
-#define HAVE_ACL_FREE 1
+/* #undef HAVE_ACL_FREE */
 
 /* Define to 1 if you have the `acl_free_text' function. */
 /* #undef HAVE_ACL_FREE_TEXT */
 
 /* Define to 1 if you have the `acl_from_mode' function. */
-#define HAVE_ACL_FROM_MODE 1
+/* #undef HAVE_ACL_FROM_MODE */
 
 /* Define to 1 if you have the `acl_from_text' function. */
-#define HAVE_ACL_FROM_TEXT 1
+/* #undef HAVE_ACL_FROM_TEXT */
 
 /* Define to 1 if you have the `acl_get_fd' function. */
-#define HAVE_ACL_GET_FD 1
+/* #undef HAVE_ACL_GET_FD */
 
 /* Define to 1 if you have the `acl_get_file' function. */
-#define HAVE_ACL_GET_FILE 1
+/* #undef HAVE_ACL_GET_FILE */
 
 /* Define to 1 if you have the <acl/libacl.h> header file. */
-#define HAVE_ACL_LIBACL_H 1
+/* #undef HAVE_ACL_LIBACL_H */
 
 /* Define to 1 if you have the `acl_set_fd' function. */
-#define HAVE_ACL_SET_FD 1
+/* #undef HAVE_ACL_SET_FD */
 
 /* Define to 1 if you have the `acl_set_file' function. */
-#define HAVE_ACL_SET_FILE 1
+/* #undef HAVE_ACL_SET_FILE */
 
 /* Define to 1 if you have the `acl_to_short_text' function. */
 /* #undef HAVE_ACL_TO_SHORT_TEXT */
@@ -842,13 +842,13 @@
 #define HAVE_ARPA_INET_H 1
 
 /* Define to 1 if you have the `attr_copy_file' function. */
-#define HAVE_ATTR_COPY_FILE 1
+/* #undef HAVE_ATTR_COPY_FILE */
 
 /* Define to 1 if you have the <attr/error_context.h> header file. */
-#define HAVE_ATTR_ERROR_CONTEXT_H 1
+/* #undef HAVE_ATTR_ERROR_CONTEXT_H */
 
 /* Define to 1 if you have the <attr/libattr.h> header file. */
-#define HAVE_ATTR_LIBATTR_H 1
+/* #undef HAVE_ATTR_LIBATTR_H */
 
 /* Define to 1 if you have the <bp-sym.h> header file. */
 /* #undef HAVE_BP_SYM_H */
@@ -857,7 +857,7 @@
 #define HAVE_BTOWC 1
 
 /* Define to 1 if nanosleep mishandles large arguments. */
-/* #undef HAVE_BUG_BIG_NANOSLEEP */
+#define HAVE_BUG_BIG_NANOSLEEP 1
 
 /* Define to 1 if strtold conforms to C99. */
 #define HAVE_C99_STRTOLD 1
@@ -924,7 +924,7 @@
 
 /* Define if the GNU dcgettext() function is already present or preinstalled.
    */
-#define HAVE_DCGETTEXT 1
+/* #undef HAVE_DCGETTEXT */
 
 /* Define to 1 if you have the declaration of `alarm', and to 0 if you don't.
    */
@@ -1144,7 +1144,7 @@
 
 /* Define to 1 if you have the declaration of `mpz_inits', and to 0 if you
    don't. */
-/* #undef HAVE_DECL_MPZ_INITS */
+#define HAVE_DECL_MPZ_INITS 1
 
 /* Define to 1 if you have the declaration of `program_invocation_name', and
    to 0 if you don't. */
@@ -1467,7 +1467,7 @@
 /* #undef HAVE_GETSYSINFO */
 
 /* Define if the GNU gettext() function is already present or preinstalled. */
-#define HAVE_GETTEXT 1
+/* #undef HAVE_GETTEXT */
 
 /* Define to 1 if you have the `gettimeofday' function. */
 #define HAVE_GETTIMEOFDAY 1
@@ -1476,10 +1476,10 @@
 #define HAVE_GETUSERSHELL 1
 
 /* Define if you have GNU libgmp (or replacement) */
-/* #undef HAVE_GMP */
+#define HAVE_GMP 1
 
 /* Define to 1 if you have the <gmp.h> header file. */
-/* #undef HAVE_GMP_H */
+#define HAVE_GMP_H 1
 
 /* Define to 1 if you have the <grp.h> header file. */
 #define HAVE_GRP_H 1
@@ -1508,7 +1508,7 @@
 /* Define to 1 if the compiler supports one of the keywords 'inline',
    '__inline__', '__inline' and effectively inlines functions marked as such.
    */
-#define HAVE_INLINE 1
+/* #undef HAVE_INLINE */
 
 /* Define to 1 if you have usable inotify support. */
 #define HAVE_INOTIFY 1
@@ -1658,7 +1658,7 @@
 #define HAVE_MAP_ANONYMOUS 1
 
 /* Define to 1 if you have the `matchpathcon_init_prefix' function. */
-#define HAVE_MATCHPATHCON_INIT_PREFIX 1
+/* #undef HAVE_MATCHPATHCON_INIT_PREFIX */
 
 /* Define to 1 if you have the <math.h> header file. */
 #define HAVE_MATH_H 1
@@ -1778,7 +1778,7 @@
 
 /* Define to 1 if getcwd works, except it sometimes fails when it shouldn't,
    setting errno to ERANGE, ENAMETOOLONG, or ENOENT. */
-#define HAVE_PARTLY_WORKING_GETCWD 1
+/* #undef HAVE_PARTLY_WORKING_GETCWD */
 
 /* Define to 1 if you have the `pathconf' function. */
 #define HAVE_PATHCONF 1
@@ -1881,16 +1881,16 @@
 #define HAVE_SEARCH_H 1
 
 /* Define to 1 if you have the `secure_getenv' function. */
-/* #undef HAVE_SECURE_GETENV */
+#define HAVE_SECURE_GETENV 1
 
 /* Define to 1 if you have the <selinux/context.h> header file. */
-#define HAVE_SELINUX_CONTEXT_H 1
+/* #undef HAVE_SELINUX_CONTEXT_H */
 
 /* Define to 1 if you have the <selinux/flask.h> header file. */
-#define HAVE_SELINUX_FLASK_H 1
+/* #undef HAVE_SELINUX_FLASK_H */
 
 /* Define to 1 if you have the <selinux/selinux.h> header file. */
-#define HAVE_SELINUX_SELINUX_H 1
+#define HAVE_SELINUX_SELINUX_H 0
 
 /* Define to 1 if you have the `setdtablesize' function. */
 /* #undef HAVE_SETDTABLESIZE */
@@ -2202,7 +2202,7 @@
 #define HAVE_SYNC 1
 
 /* Define to 1 if you have the `syncfs' function. */
-/* #undef HAVE_SYNCFS */
+#define HAVE_SYNCFS 1
 
 /* Define to 1 if you have the `sysctl' function. */
 #define HAVE_SYSCTL 1
@@ -2220,7 +2220,7 @@
 /* #undef HAVE_SYSMP */
 
 /* Define to 1 if you have the <sys/acl.h> header file. */
-#define HAVE_SYS_ACL_H 1
+/* #undef HAVE_SYS_ACL_H */
 
 /* Define to 1 if you have the <sys/bitypes.h> header file. */
 /* #undef HAVE_SYS_BITYPES_H */
@@ -2518,7 +2518,7 @@
 #define HAVE___FSETLOCKING 1
 
 /* Define to 1 if you have the `__secure_getenv' function. */
-#define HAVE___SECURE_GETENV 1
+/* #undef HAVE___SECURE_GETENV */
 
 /* Define to 1 if you have the `__xpg_strerror_r' function. */
 #define HAVE___XPG_STRERROR_R 1
@@ -2939,7 +2939,7 @@
 /* #undef UNLINK_PARENT_BUG */
 
 /* Define to nonzero if you want access control list support. */
-#define USE_ACL 1
+#define USE_ACL 0
 
 /* Define if the POSIX multithreading library can be used. */
 #define USE_POSIX_THREADS 1
@@ -3007,7 +3007,7 @@
 /* #undef USE_WINDOWS_THREADS */
 
 /* Define if you want extended attribute support. */
-#define USE_XATTR 1
+#define USE_XATTR 0
 
 /* Version number of package */
 #define VERSION "8.24"
@@ -3045,7 +3045,7 @@
 #define _DARWIN_USE_64_BIT_INODE 1
 
 /* Number of bits in a file offset, on hosts where this is settable. */
-#define _FILE_OFFSET_BITS 64
+/* #undef _FILE_OFFSET_BITS */
 
 /* Define to 1 if Gnulib overrides 'struct stat' on Windows so that struct
    stat.st_size becomes 64-bit. */
@@ -3106,7 +3106,7 @@
 
 /* Define to rpl_ if the getopt replacement functions and variables should be
    used. */
-#define __GETOPT_PREFIX rpl_
+/* #undef __GETOPT_PREFIX */
 
 /* Please see the Gnulib manual for how to use these macros.
 
@@ -3200,13 +3200,13 @@
 #endif
 
 /* Always use our fgetfilecon wrapper. */
-#define fgetfilecon rpl_fgetfilecon
+/* #undef fgetfilecon */
 
 /* Define to a replacement function name for fnmatch(). */
 /* #undef fnmatch */
 
 /* Always use our getfilecon wrapper. */
-#define getfilecon rpl_getfilecon
+/* #undef getfilecon */
 
 /* Define to a replacement function name for getpass(). */
 #define getpass gnu_getpass
@@ -3240,7 +3240,7 @@
 #endif
 
 /* Always use our lgetfilecon wrapper. */
-#define lgetfilecon rpl_lgetfilecon
+/* #undef lgetfilecon */
 
 /* Define to 1 if the compiler is checking for lint. */
 /* #undef lint */

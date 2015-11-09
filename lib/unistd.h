@@ -126,7 +126,7 @@
 
 /* Get getopt(), optarg, optind, opterr, optopt.
    But avoid namespace pollution on glibc systems.  */
-#if 01 && !defined __GLIBC__ && !defined _GL_SYSTEM_GETOPT
+#if 0 && !defined __GLIBC__ && !defined _GL_SYSTEM_GETOPT
 # define __need_getopt
 # include <getopt.h>
 #endif
@@ -926,7 +926,7 @@ _GL_WARN_ON_USE (ftruncate, "ftruncate is unportable - "
    extension: If BUF is NULL, an array is allocated with 'malloc'; the array
    is SIZE bytes long, unless SIZE == 0, in which case it is as big as
    necessary.  */
-# if 1
+# if 0
 #  if !(defined __cplusplus && defined GNULIB_NAMESPACE)
 #   define getcwd rpl_getcwd
 #  endif

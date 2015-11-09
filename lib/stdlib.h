@@ -1114,7 +1114,7 @@ _GL_WARN_ON_USE (rpmatch, "rpmatch is unportable - "
 
 #if 1
 /* Look up NAME in the environment, returning 0 in insecure situations.  */
-# if !0
+# if !1
 _GL_FUNCDECL_SYS (secure_getenv, char *,
                   (char const *name) _GL_ARG_NONNULL ((1)));
 # endif

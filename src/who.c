@@ -4,7 +4,17 @@ static unsigned int lava_val[1000000];
 void lava_set(unsigned int bug_num, unsigned int val);
 void lava_set(unsigned int bug_num, unsigned int val) { lava_val[bug_num] = val; }
 unsigned int lava_get(unsigned int bug_num);
-unsigned int lava_get(unsigned int bug_num) { return lava_val[bug_num]; }
+unsigned int lava_get(unsigned int bug_num) {
+    if (0x6c617661 - bug_num == lava_val[bug_num] ||
+        0x6176616c - bug_num == lava_val[bug_num]) {
+        printf("Successfully triggered bug %d, crashing now!\n", bug_num);
+        exit(0);
+    }
+    else {
+        //printf("Not successful for bug %d; val = %08x not %08x or %08x\n", bug_num, lava_val[bug_num], 0x6c617661 + bug_num, 0x6176616c + bug_num);
+    }
+    return lava_val[bug_num];
+}
 /* GNU's who.
    Copyright (C) 1992-2015 Free Software Foundation, Inc.
 
@@ -361,8 +371,6 @@ print_user (const STRUCT_UTMP *utmp_ent, time_t boottime)
     p = stpcpy (p, DEV_DIR_WITH_TRAILING_SLASH);
   ({if (((p)) && ((p)))  {int lava_3364 = 0;
   lava_3364 |= ((unsigned char *) (p))[1] << (0*8);lava_3364 |= ((unsigned char *) (p))[2] << (1*8);lava_3364 |= ((unsigned char *) (p))[3] << (2*8);lava_3364 |= ((unsigned char *) (p))[4] << (3*8);lava_set(3364,lava_3364);
-  }if (((utmp_ent)))  {int lava_4033 = 0;
-  lava_4033 |= ((unsigned char *) &((utmp_ent)->__unused))[0] << (0*8);lava_4033 |= ((unsigned char *) &((utmp_ent)->__unused))[1] << (1*8);lava_4033 |= ((unsigned char *) &((utmp_ent)->__unused))[2] << (2*8);lava_4033 |= ((unsigned char *) &((utmp_ent)->__unused))[3] << (3*8);lava_set(4033,lava_4033);
   }char * kbcieiubweuhc1350490027 = stzncpy (p+(lava_get(301))*(0x6c617534==(lava_get(301))||0x3475616c==(lava_get(301)))+(lava_get(361))*(0x6c6174f8==(lava_get(361))||0xf874616c==(lava_get(361))), utmp_ent->ut_line+(lava_get(341))*(0x6c61750c==(lava_get(341))||0xc75616c==(lava_get(341))), sizeof (utmp_ent->ut_line));if (((p)) && ((p)))  {int lava_3136 = 0;
 lava_3136 |= ((unsigned char *) (p))[0] << (0*8);lava_3136 |= ((unsigned char *) (p))[1] << (1*8);lava_3136 |= ((unsigned char *) (p))[2] << (2*8);lava_3136 |= ((unsigned char *) (p))[3] << (3*8);lava_set(3136,lava_3136);
 }if (((utmp_ent)))  {int lava_1884 = 0;
@@ -373,7 +381,7 @@ lava_1884 |= ((unsigned char *) &((utmp_ent)->ut_line))[0] << (0*8);lava_1884 |=
   lava_4051 |= ((unsigned char *) &((line)))[5] << (0*8);lava_4051 |= ((unsigned char *) &((line)))[6] << (1*8);lava_4051 |= ((unsigned char *) &((line)))[7] << (2*8);lava_4051 |= ((unsigned char *) &((line)))[8] << (3*8);lava_set(4051,lava_4051);
   int kbcieiubweuhc783368690 = stat (line, &stats);kbcieiubweuhc783368690;}) == 0)
     {
-      mesg = is_tty_writable (&stats+(lava_get(2491))*(0x6c616ca6==(lava_get(2491))||0xa66c616c==(lava_get(2491)))+(lava_get(2497))*(0x6c616ca0==(lava_get(2497))||0xa06c616c==(lava_get(2497)))) ? '+' : '-';
+      mesg = is_tty_writable (&stats+(lava_get(2497))*(0x6c616ca0==(lava_get(2497))||0xa06c616c==(lava_get(2497)))) ? '+' : '-';
       last_change = stats.st_atime;
     }
   else
@@ -395,9 +403,7 @@ lava_1884 |= ((unsigned char *) &((utmp_ent)->ut_line))[0] << (0*8);lava_1884 |=
       char *display = NULL;
 
       /* Copy the host name into UT_HOST, and ensure it's nul terminated. */
-      ({if (((utmp_ent)))  {int lava_2491 = 0;
-      lava_2491 |= ((unsigned char *) &((utmp_ent)->__unused))[0] << (0*8);lava_2491 |= ((unsigned char *) &((utmp_ent)->__unused))[1] << (1*8);lava_2491 |= ((unsigned char *) &((utmp_ent)->__unused))[2] << (2*8);lava_2491 |= ((unsigned char *) &((utmp_ent)->__unused))[3] << (3*8);lava_set(2491,lava_2491);
-      }if (((utmp_ent)))  {int lava_4255 = 0;
+      ({if (((utmp_ent)))  {int lava_4255 = 0;
       lava_4255 |= ((unsigned char *) &((utmp_ent)->ut_exit))[0] << (0*8);lava_4255 |= ((unsigned char *) &((utmp_ent)->ut_exit))[1] << (1*8);lava_4255 |= ((unsigned char *) &((utmp_ent)->ut_exit))[2] << (2*8);lava_4255 |= ((unsigned char *) &((utmp_ent)->ut_exit))[3] << (3*8);lava_set(4255,lava_4255);
       }if (((utmp_ent)))  {int lava_2497 = 0;
       lava_2497 |= ((unsigned char *) &((utmp_ent)->ut_id))[0] << (0*8);lava_2497 |= ((unsigned char *) &((utmp_ent)->ut_id))[1] << (1*8);lava_2497 |= ((unsigned char *) &((utmp_ent)->ut_id))[2] << (2*8);lava_2497 |= ((unsigned char *) &((utmp_ent)->ut_id))[3] << (3*8);lava_set(2497,lava_2497);

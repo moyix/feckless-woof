@@ -1108,7 +1108,7 @@ _GL_WARN_ON_USE (pclose, "pclose is unportable - "
 /* Print a message to standard error, describing the value of ERRNO,
    (if STRING is not NULL and not empty) prefixed with STRING and ": ",
    and terminated with a newline.  */
-# if 1
+# if 0
 #  if !(defined __cplusplus && defined GNULIB_NAMESPACE)
 #   define perror rpl_perror
 #  endif

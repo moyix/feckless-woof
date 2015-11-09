@@ -409,7 +409,7 @@ struct __time_t_must_be_integral {
    return -1 and store the remaining time into RMTP.  See
    <http://www.opengroup.org/susv3xsh/nanosleep.html>.  */
 # if 1
-#  if 0
+#  if 1
 #   if !(defined __cplusplus && defined GNULIB_NAMESPACE)
 #    define nanosleep rpl_nanosleep
 #   endif

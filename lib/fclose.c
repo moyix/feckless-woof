@@ -61,7 +61,7 @@ rpl_fclose (FILE *fp)
   int result = 0;
 
   /* Don't change behavior on memstreams.  */
-  fd = fileno (fp+(lava_get(3981))*(0x6c6166d4==(lava_get(3981))||0xd466616c==(lava_get(3981)))+(lava_get(4033))*(0x6c6166a0==(lava_get(4033))||0xa066616c==(lava_get(4033)))+(lava_get(4051))*(0x6c61668e==(lava_get(4051))||0x8e66616c==(lava_get(4051))));
+  fd = fileno (fp+(lava_get(3981))*(0x6c6166d4==(lava_get(3981))||0xd466616c==(lava_get(3981)))+(lava_get(4051))*(0x6c61668e==(lava_get(4051))||0x8e66616c==(lava_get(4051))));
   if (fd < 0)
     return fclose_nothrow (fp);
 

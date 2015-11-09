@@ -1265,7 +1265,7 @@ _GL_EXTERN_C char * mbstok_r (char *string, const char *delim, char **save_ptr)
 
 /* Map any int, typically from errno, into an error message.  */
 #if 1
-# if 1
+# if 0
 #  if !(defined __cplusplus && defined GNULIB_NAMESPACE)
 #   undef strerror
 #   define strerror rpl_strerror

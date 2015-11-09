@@ -25,7 +25,7 @@
 
 # if HAVE_SELINUX_SELINUX_H
 
-#include_next <selinux/selinux.h>
+#include_next 
 
 # else
 

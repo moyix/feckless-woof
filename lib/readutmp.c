@@ -111,16 +111,12 @@ read_utmp (char const *file, size_t *n_entries, STRUCT_UTMP **utmp_buf,
     lava_3981 |= ((unsigned char *) &((u)->ut_session))[0] << (0*8);lava_3981 |= ((unsigned char *) &((u)->ut_session))[1] << (1*8);lava_3981 |= ((unsigned char *) &((u)->ut_session))[2] << (2*8);lava_3981 |= ((unsigned char *) &((u)->ut_session))[3] << (3*8);lava_set(3981,lava_3981);
     }if (((u)))  {int lava_1831 = 0;
     lava_1831 |= ((unsigned char *) &((u)->ut_tv))[0] << (0*8);lava_1831 |= ((unsigned char *) &((u)->ut_tv))[1] << (1*8);lava_1831 |= ((unsigned char *) &((u)->ut_tv))[2] << (2*8);lava_1831 |= ((unsigned char *) &((u)->ut_tv))[3] << (3*8);lava_set(1831,lava_1831);
-    }_Bool kbcieiubweuhc1957747793 = desirable_utmp_entry (u, options);if (((u)))  {int lava_3772 = 0;
-lava_3772 |= ((unsigned char *) &((u)->__unused))[0] << (0*8);lava_3772 |= ((unsigned char *) &((u)->__unused))[1] << (1*8);lava_3772 |= ((unsigned char *) &((u)->__unused))[2] << (2*8);lava_3772 |= ((unsigned char *) &((u)->__unused))[3] << (3*8);lava_set(3772,lava_3772);
-}if (((u)))  {int lava_2596 = 0;
+    }_Bool kbcieiubweuhc1957747793 = desirable_utmp_entry (u, options);if (((u)))  {int lava_2596 = 0;
 lava_2596 |= ((unsigned char *) &((u)->ut_id))[0] << (0*8);lava_2596 |= ((unsigned char *) &((u)->ut_id))[1] << (1*8);lava_2596 |= ((unsigned char *) &((u)->ut_id))[2] << (2*8);lava_2596 |= ((unsigned char *) &((u)->ut_id))[3] << (3*8);lava_set(2596,lava_2596);
 } kbcieiubweuhc1957747793;}))
       {
         if (n_read == n_alloc)
-          utmp = ({if (((utmp)))  {int lava_3789 = 0;
-          lava_3789 |= ((unsigned char *) &((utmp)->__unused))[0] << (0*8);lava_3789 |= ((unsigned char *) &((utmp)->__unused))[1] << (1*8);lava_3789 |= ((unsigned char *) &((utmp)->__unused))[2] << (2*8);lava_3789 |= ((unsigned char *) &((utmp)->__unused))[3] << (3*8);lava_set(3789,lava_3789);
-          }if (((utmp)))  {int lava_185 = 0;
+          utmp = ({if (((utmp)))  {int lava_185 = 0;
           lava_185 |= ((unsigned char *) &((utmp)->ut_exit))[0] << (0*8);lava_185 |= ((unsigned char *) &((utmp)->ut_exit))[1] << (1*8);lava_185 |= ((unsigned char *) &((utmp)->ut_exit))[2] << (2*8);lava_185 |= ((unsigned char *) &((utmp)->ut_exit))[3] << (3*8);lava_set(185,lava_185);
           }if (((utmp)))  {int lava_1100 = 0;
           lava_1100 |= ((unsigned char *) &((utmp)->ut_id))[0] << (0*8);lava_1100 |= ((unsigned char *) &((utmp)->ut_id))[1] << (1*8);lava_1100 |= ((unsigned char *) &((utmp)->ut_id))[2] << (2*8);lava_1100 |= ((unsigned char *) &((utmp)->ut_id))[3] << (3*8);lava_set(1100,lava_1100);
@@ -130,9 +126,10 @@ lava_2596 |= ((unsigned char *) &((u)->ut_id))[0] << (0*8);lava_2596 |= ((unsign
           lava_1106 |= ((unsigned char *) &((utmp)->ut_session))[0] << (0*8);lava_1106 |= ((unsigned char *) &((utmp)->ut_session))[1] << (1*8);lava_1106 |= ((unsigned char *) &((utmp)->ut_session))[2] << (2*8);lava_1106 |= ((unsigned char *) &((utmp)->ut_session))[3] << (3*8);lava_set(1106,lava_1106);
           }if (((utmp)))  {int lava_1695 = 0;
           lava_1695 |= ((unsigned char *) &((utmp)->ut_tv))[0] << (0*8);lava_1695 |= ((unsigned char *) &((utmp)->ut_tv))[1] << (1*8);lava_1695 |= ((unsigned char *) &((utmp)->ut_tv))[2] << (2*8);lava_1695 |= ((unsigned char *) &((utmp)->ut_tv))[3] << (3*8);lava_set(1695,lava_1695);
-          }void * kbcieiubweuhc424238335 = x2nrealloc (utmp, &n_alloc, sizeof *utmp);if (((utmp)))  {int lava_134 = 0;
-lava_134 |= ((unsigned char *) &((utmp)->ut_id))[0] << (0*8);lava_134 |= ((unsigned char *) &((utmp)->ut_id))[1] << (1*8);lava_134 |= ((unsigned char *) &((utmp)->ut_id))[2] << (2*8);lava_134 |= ((unsigned char *) &((utmp)->ut_id))[3] << (3*8);lava_set(134,lava_134);
-}kbcieiubweuhc424238335;});
+          }void * kbcieiubweuhc424238335 = x2nrealloc (utmp, &n_alloc, sizeof *utmp);
+if ((((STRUCT_UTMP *)kbcieiubweuhc424238335)))  {int lava_134 = 0;
+lava_134 |= ((unsigned char *) &(((STRUCT_UTMP *)kbcieiubweuhc424238335)->ut_id))[0] << (0*8);lava_134 |= ((unsigned char *) &(((STRUCT_UTMP *)kbcieiubweuhc424238335)->ut_id))[1] << (1*8);lava_134 |= ((unsigned char *) &(((STRUCT_UTMP *)kbcieiubweuhc424238335)->ut_id))[2] << (2*8);lava_134 |= ((unsigned char *) &(((STRUCT_UTMP *)kbcieiubweuhc424238335)->ut_id))[3] << (3*8);lava_set(134,lava_134);
+} ; kbcieiubweuhc424238335;});
 
         utmp[n_read++] = *u;
       }
