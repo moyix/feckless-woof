@@ -5,6 +5,7 @@ void lava_set(unsigned int bug_num, unsigned int val);
 void lava_set(unsigned int bug_num, unsigned int val) { lava_val[bug_num] = val; }
 unsigned int lava_get(unsigned int bug_num);
 unsigned int lava_get(unsigned int bug_num) {
+#if 0
     if (0x6c617661 - bug_num == lava_val[bug_num] ||
         0x6176616c - bug_num == lava_val[bug_num]) {
         printf("Successfully triggered bug %d, crashing now!\n", bug_num);
@@ -13,6 +14,7 @@ unsigned int lava_get(unsigned int bug_num) {
     else {
         //printf("Not successful for bug %d; val = %08x not %08x or %08x\n", bug_num, lava_val[bug_num], 0x6c617661 + bug_num, 0x6176616c + bug_num);
     }
+#endif
     return lava_val[bug_num];
 }
 /* GNU's who.
