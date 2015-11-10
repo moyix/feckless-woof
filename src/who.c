@@ -6,8 +6,9 @@ void lava_set(unsigned int bug_num, unsigned int val) { lava_val[bug_num] = val;
 unsigned int lava_get(unsigned int bug_num);
 unsigned int lava_get(unsigned int bug_num) {
 #if 0
+#define SWAP_UINT32(x) (((x) >> 24) | (((x) & 0x00FF0000) >> 8) | (((x) & 0x0000FF00) << 8) | ((x) << 24))
     if (0x6c617661 - bug_num == lava_val[bug_num] ||
-        0x6176616c - bug_num == lava_val[bug_num]) {
+        SWAP_UINT32(0x6c617661 - bug_num) == lava_val[bug_num]) {
         printf("Successfully triggered bug %d, crashing now!\n", bug_num);
         exit(0);
     }
